@@ -25,7 +25,7 @@ export default function EditNotePage() {
 
   async function handleUpdate(values) {
     await updateNote(id, values)
-    navigate(\`/notes/\${id}\`)
+    navigate(`/notes/${id}`)
   }
 
   return (

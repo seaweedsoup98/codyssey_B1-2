@@ -7,7 +7,7 @@ export default function NewNotePage() {
 
   async function handleCreate(values) {
     const note = await createNote(values)
-    navigate(\`/notes/\${note.id}\`)
+    navigate(`/notes/${note.id}`)
   }
 
   return (
