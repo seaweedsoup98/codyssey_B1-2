@@ -60,7 +60,7 @@ export default function NoteDetailPage() {
       )}
 
       <div className="action-row">
-        <Link className="link-button secondary" to={\`/notes/\${id}/edit\`}>수정</Link>
+        <Link className="link-button secondary" to={`/notes/${id}/edit`}>수정</Link>
         <Button variant="danger" onClick={handleDelete} disabled={deleting}>
           {deleting ? '삭제 중...' : '삭제'}
         </Button>
